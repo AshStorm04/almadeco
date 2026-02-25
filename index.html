@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Repairs</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        :root {
+            --primary: #FAF3E1;
+            --secondary: #4F4C47;
+            --dark-text: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--primary);
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Navbar */
+        nav {
+            padding: 20px 0;
+        }
+
+        nav .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+            color: var(--dark-text);
+        }
+
+        .btn {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 15px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Work Preview */
+        .work-preview {
+            padding: 80px 0;
+        }
+
+        .work-preview h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .work-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--secondary);
+            color: var(--primary);
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 80px;
+        }
+
+        .cta h2 {
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--secondary);
+        }
+
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+        button:focus,
+        a:focus,
+        input:focus {
+        outline: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-content">
+        <a href="index.html">
+            <img src="assets/icons/ΒrandΝame.png" a    lt="ALMA DECO">
+        </a>
+
+        <ul>
+            <li><a href="#services">Υπηρεσίες</a></li>
+            <li><a href="#work">Τα Έργα μας</a></li>
+            <li><a href="about.html">Σχετικά με εμάς</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero" id="hero">
+    <div class="container">
+        <h1>Αξιόπιστες επισκευές κατοικιών</h1>
+        <p>
+            Ποιοτική κατασκευή, ειλικρινείς τιμές και επαγγελματικές υπηρεσίες επισκευής σπιτιού τις οποίες μπορείτε να εμπιστευτείτε.
+        </p>
+
+        <a href="contact.html" class="btn">Ζητήστε Δωρεάν Εκτίμηση</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <h2>Οι Υπηρεσίες μας</h2>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Επισκευές Υδραυλικών</h3>
+                <p>Διόρθωση διαρροών, προβλημάτων σωλήνων και γενικών προβλημάτων πλύσης.
+            </div>
+
+            <div class="service-card">
+                <h3>Επισκευές Ξύλου</h3>
+                <p>Διόρθωση και αντικατάσταση ξύλου, προβλημάτων σε πόρτες και παράθυρα.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Επισκευές Ηλεκτρολογικών</h3>
+                <p>Μικρές επισκευές και διαγνωστική εργασία ηλεκτρολογικών συστημάτων.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Γενικές Επισκευές Σπιτιού</h3>
+                <p>Πόρτες, παράθυρα, δάπεδα και άλλα.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work-preview" id="work">
+    <div class="container">
+        <h2>Τα Πρόσφατα Έργα μας</h2>
+
+        <div class="work-grid">
+            <img src="assets/images/gallery/sample1.jpg" alt="">
+            <img src="assets/images/gallery/sample2.jpg" alt="">
+            <img src="assets/images/gallery/sample3.jpg" alt="">
+        </div>
+
+        <!-- Button to work.html -->
+        <div style="text-align:center; margin-top:40px;">
+            <a href="work.html" class="btn">Δείτε Περισσότερα Έργα</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Χρειάζεστε Επισκευές Σωστά?</h2>
+    <p>Επικοινωνήστε μαζί μας σήμερα για δωρεάν εκτίμηση.</p>
+    <br>
+    <a href="contact.html" class="btn">Επικοινωνήστε Τώρα</a>
+</section>
+
+<div style="text-align:center; padding:20px;">
+    <a href="#hero" class="btn">Αρχή</a>
+</div>
+
+<footer>
+    <p>© 2026 ALMA DECO</p>
+   
+</footer>
+
+</body>
+</html>
