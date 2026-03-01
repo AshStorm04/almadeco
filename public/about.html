@@ -1,136 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Σχετικά με εμάς | ALMA DECO</title>
 
     <link rel="icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        :root {
-            --primary: #FAF3E1;
-            --secondary: #4F4C47;
-            --dark-text: #333;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--primary);
-            color: var(--secondary);
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        /* Navigation */
-        nav {
-            padding: 20px 0;
-        }
-
-        nav .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--secondary);
-            font-weight: 500;
-        }
-
-        /* About Sections */
-        .about-hero {
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .about-hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .about-hero p {
-            max-width: 700px;
-            margin: auto;
-            color: var(--dark-text);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            padding: 80px 0;
-            align-items: center;
-        }
-
-        .about-grid img {
-            width: 100%;
-            border-radius: 12px;
-        }
-
-        .card-section {
-            padding: 80px 0;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-        }
-
-        @media(max-width:768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-hero h1 {
-                font-size: 34px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <nav>
     <div class="container nav-content">
-        <h2>Residential Repairs</h2>
+        <h2>ALMA DECO</h2>
 
         <ul>
-            <li><a href="index.html">Αρχική</a></li>
-            <li><a href="services.html">Υπηρεσίες</a></li>
-            <li><a href="work.html">Τα Έργα μας</a></li>
+            <li><a href="index.html#hero">Αρχική</a></li>
+            <li><a href="index.html">Υπηρεσίες</a></li>
+            <li><a href="index.html#work">Τα Έργα μας</a></li>
             <li><a href="contact.html">Επικοινωνία</a></li>
         </ul>
     </div>
@@ -161,7 +51,8 @@
     </div>
 
     <div>
-        <img src="assets/images/hero/hero-main.jpg" alt="Σχετικά με εμάς">
+        <!--TODO-->
+        <img src="assets/images/hero/hero-main.jpg"      alt="A ferry sailing on the ocean at sunset with the text 'AL&MA DECO' on the side and four overlapping red heart emojis on the foreground.">
     </div>
 </section>
 
@@ -187,7 +78,7 @@
             </div>
 
             <div class="card">
-                <h3>✔ Πελάτης Κεντρικός</h3>
+                <h3>✔ Προτεραιότητα στον Πελάτη</h3>
                 <p>Η ικανοποίηση του πελάτη είναι η πρώτη μας προτεραιότητα.</p>
             </div>
 
@@ -195,9 +86,15 @@
     </div>
 </section>
 
-<footer>
-    <p>© 2026 ALMA DECO</p>
-</footer>
+ <footer>
+        <div class="container">
+            <p>ALMA DECO – Καβαλάρη Μαρία, Ατομική Επιχείρηση</p>
+            <p>ΑΦΜ: 124777091 | ΔΟΥ: ΚΕΦΟΔΕ Αττικής</p>
+            <p>Μπιζανίου 31, Μεταμόρφωση 14451</p>
+            <p><a href="privacy.html">Πολιτικές Απορρήτου</a> </p>            
+            <p>© 2026 ALMA DECO</p> 
+        </div>
+    </footer>
 
 </body>
 </html>

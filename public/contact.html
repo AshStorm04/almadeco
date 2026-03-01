@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Επικοινωνήστε μαζί μας | ALMA DECO</title>
+
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-content">
+        <a href="index.html">
+          <h2>ALMA DECO</h2>
+        </a>
+        <ul>
+          <li><a href="index.html#hero">Αρχική</a></li>
+          <li><a href="index.html#services">Υπηρεσίες</a></li>
+          <li><a href="index.html#work">Τα Έργα μας</a></li>
+          <li><a href="about.html">Σχετικά με εμάς</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <h1>Επικοινωνήστε μαζί μας</h1>
+            <p>
+              Χρειάζεστε επισκευές σπιτιού; Στείλτε μας ένα μήνυμα και θα
+              επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Ονοματεπώνυμο</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  aria-describedby="nameError"
+                  aria-required="true"
+                />
+                <div
+                  id="nameError"
+                  class="error-message"
+                  aria-live="polite"
+                ></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  aria-describedby="emailError"
+                  aria-required="true"
+                />
+                <div
+                  id="emailError"
+                  class="error-message"
+                  aria-live="polite"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Τηλέφωνο (Προαιρετικό)</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  aria-describedby="phoneError"
+                />
+                <div
+                  id="phoneError"
+                  class="error-message"
+                  aria-live="polite"
+                ></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Περιγράψτε την επισκευή</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-describedby="messageError"
+                  aria-required="true"
+                ></textarea>
+                <div
+                  id="messageError"
+                  class="error-message"
+                  aria-live="polite"
+                ></div>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  required
+                  aria-describedby="consentError"
+                  aria-required="true"
+                />
+                <label for="consent">
+                  Συμφωνώ με την <a href="privacy.html">Πολιτική Απορρήτου</a>
+                </label>
+              </div>
+
+              <div
+                id="consentError"
+                class="error-message"
+                aria-live="polite"
+              ></div>
+              <small>
+                Τα προσωπικά σας δεδομένα θα χρησιμοποιηθούν μόνο για την
+                επεξεργασία του αιτήματος σας και δεν θα κοινοποιηθούν σε
+                τρίτους.
+              </small>
+
+              <button type="submit">Αποστολή Μηνύματος</button>
+
+              <p id="formResponse" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="info-box">
+            <h3>Πληροφορίες Επικοινωνίας</h3>
+            <br />
+            <p>📞 Τηλέφωνο: (+30)6944054834</p>
+            <p>📞 Τηλέφωνο: (+30)6936600817</p>
+            <p>📧 Email: almadeco1380@gmail.com</p>
+            <p>🕒 Επικοινωνία: Δευτέρα - Σάββατο</p>
+            <br />
+
+            <h4>Επείγουσες Επισκευές;</h4>
+            <p>Καλέστε μας άμεσα για επείγουσες υπηρεσίες.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>ALMA DECO – Καβαλάρη Μαρία, Ατομική Επιχείρηση</p>
+        <p>ΑΦΜ: 124777091 | ΔΟΥ: ΚΕΦΟΔΕ Αττικής</p>
+        <p>Μπιζανίου 31, Μεταμόρφωση 14451</p>
+        <p><a href="privacy.html">Πολιτικές Απορρήτου</a></p>
+        <p>© 2026 ALMA DECO</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

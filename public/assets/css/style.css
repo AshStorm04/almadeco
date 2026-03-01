@@ -1,0 +1,427 @@
+/* =============================
+   ROOT VARIABLES
+============================= */
+
+:root {
+    --primary: #FAF3E1;
+    --secondary: #4F4C47;
+    --dark-text: #333333;
+}
+
+/* =============================
+   GLOBAL RESET
+============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--primary);
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+/* =============================
+   CONTAINER
+============================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =============================
+   NAVIGATION
+============================= */
+
+nav {
+    padding: 20px 0;
+}
+
+nav .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: var(--dark-text);
+}
+
+/* =============================
+   BUTTONS
+============================= */
+
+.btn {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* =============================
+   SECTIONS
+============================= */
+
+.section {
+    padding: 80px 0;
+}
+
+.section h1,
+.section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* =============================
+   SERVICES
+============================= */
+
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* =============================
+   WORK / GALLERY
+============================= */
+
+.work-preview {
+    padding: 80px 0;
+}
+
+.work-preview h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.work-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Before / After Cards */
+
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+}
+
+/* =============================
+   CONTACT PAGE
+============================= */
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+textarea {
+    height: 160px;
+    resize: none;
+}
+
+button {
+    background: var(--secondary);
+    color: var(--primary);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Info Box */
+
+.info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    align-self: start; /* prevents stretching in the grid */
+}
+
+/* =============================
+   ABOUT PAGE
+============================= */
+
+.about-hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: var(--dark-text);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px 0;
+    align-items: center;
+}
+
+.about-grid img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-section {
+    padding: 80px 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* =============================
+   CTA SECTION
+============================= */
+
+.cta {
+    background: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 90px 20px;
+    margin-top: 80px;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--secondary);
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+============================= */
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .contact-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Accessibility focus */
+
+button:focus,
+a:focus,
+input:focus 
+textarea:focus {
+    outline: 3px solid blue;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input {
+    width: auto; /* prevents full width */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}   
+
+.work-grid img {
+    width: 100%;
+    max-width: 350px;        /* prevents overly large images */
+    height: 200px;           /* slightly smaller height */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: block;
+    margin: 0 auto;          /* center images inside grid cell */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.input-error {
+  border: 2px solid red !important;
+}
+
+.input-valid {
+  border: 2px solid green !important;
+}
+
+/* Improve focus visibility */
+input:focus,
+textarea:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
