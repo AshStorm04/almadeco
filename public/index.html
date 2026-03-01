@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
-    <nav>
+  <body id="top">
+    <nav >
       <div class="container nav-content">
         <a href="index.html">
           <h2>ALMA DECO</h2>
@@ -32,7 +32,7 @@
       </div>
     </nav>
 
-    <section class="hero" id="hero">
+    <section class="hero">
       <div class="container">
         <h1>Αξιόπιστες επισκευές κατοικιών</h1>
         <p>
@@ -80,7 +80,7 @@
       <div class="container">
         <h2>Τα Πρόσφατα Έργα μας</h2>
 
-        <!--TODO-->
+        
         <div class="work-grid">
           <img src="assets/images/gallery/sample1.jpg" alt="Άβαφη γυψοσανίδα με ορατές κολλημένες με ταινία και λασπωμένες ραφές σε εξέλιξη κάτω από το φωτιστικό οροφής. Ένα λευκό ράφι εκτείνεται κατά μήκος του πάνω μέρους του τοίχου." />
           <img src="assets/images/gallery/sample2.jpg" alt="Κενό δωμάτιο με ανοιχτόχρωμο ξύλινο δάπεδο, απλούς ανοιχτόχρωμους γκρι τοίχους και μια πρίζα ορατή στον τοίχο. Η πόρτα με το εκτεθειμένο πλαίσιο είναι μερικώς ορατή στα δεξιά.   " />
@@ -102,19 +102,31 @@
     </section>
 
     <div style="text-align: center; padding: 20px">
-      <a href="#hero" class="btn">Αρχή</a>
+      <a href="#top" class="btn">Αρχή</a>
     </div>
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <p>ALMA DECO – Καβαλάρη Μαρία, Ατομική Επιχείρηση</p>
-        <p>ΑΦΜ: 124777091 | ΔΟΥ: ΚΕΦΟΔΕ Αττικής</p>
-        <p>Μπιζανίου 31, Μεταμόρφωση 14451</p>
-        <p><a href="privacy.html">Πολιτικές Απορρήτου</a></p>
-        <p>© 2026 ALMA DECO</p>
-      </div>
-    </footer>
+  <div class="footer-wrapper container">
+    
+    <div class="sponsor sponsor-left">
+      <img src="assets/icons/espa.png" alt="ΕΣΠΑ (Εταιρικό Σύμφωνο για το Πλαίσιο Ανάπτυξης)">
+    </div>
+    
+    <div class="footer-content">
+      <p>ALMA DECO – Καβαλάρη Μαρία, Ατομική Επιχείρηση</p>
+      <p>ΑΦΜ: 124777091 | ΔΟΥ: ΚΕΦΟΔΕ Αττικής</p>
+      <p>Μπιζανίου 31, Μεταμόρφωση 14451</p>
+      <p><a href="privacy.html">Πολιτικές Απορρήτου</a></p>
+      <p>© 2026 ALMA DECO</p>
+    </div>
+    
+    <div class="sponsor sponsor-right">
+      <img src="assets/icons/dypa.png" alt="Δ.ΥΠ.Α. (Δημόσια Υπηρεσία Απασχόλησης)">
+    </div>
+
+  </div>
+</footer>
     <script src="assets/js/navbar.js"></script>
   </body>
 </html>

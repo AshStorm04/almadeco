@@ -155,8 +155,8 @@ form.addEventListener("submit", function (e) {
     message: form.message.value.trim(),
     consent: "Συμφώνησε"
   };
-
-  emailjs.send("service_5byce3q", "template_r942y7r", formData)
+  console.log("Sending form data");
+  emailjs.send("service_vhgvrd8", "template_ufa03bn", formData)
     .then(() => {
       responseMsg.textContent = "Το μήνυμα στάλθηκε επιτυχώς!";
       responseMsg.style.color = "green";
@@ -166,7 +166,8 @@ form.addEventListener("submit", function (e) {
         el.removeAttribute("aria-invalid");
       });
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log("EmailJS Error:", error);
       responseMsg.textContent = "Σφάλμα αποστολής. Δοκιμάστε ξανά.";
       responseMsg.style.color = "red";
     });
