@@ -43,10 +43,7 @@
     <link rel="icon" href="favicon.png" />
 
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -66,36 +63,47 @@
         </ul>
       </div>
     </nav>
+    <main>
+      <!-- HERO 404 SECTION -->
+      <section class="hero">
+        <div class="container">
+          <h1>404</h1>
+          <p style="font-size: 22px; font-weight: 600">
+            Η σελίδα που αναζητάτε δεν βρέθηκε.
+          </p>
+          <p>
+            Ίσως η διεύθυνση να γράφτηκε λάθος ή η σελίδα να έχει μετακινηθεί.
+            Μπορείτε να επιστρέψετε στην αρχική σελίδα ή να επικοινωνήσετε μαζί
+            μας.
+          </p>
 
-    <!-- HERO 404 SECTION -->
-    <section class="hero">
-      <div class="container">
-        <h1>404</h1>
-        <p style="font-size: 22px; font-weight: 600;">
-          Η σελίδα που αναζητάτε δεν βρέθηκε.
-        </p>
-        <p>
-          Ίσως η διεύθυνση να γράφτηκε λάθος ή η σελίδα να έχει μετακινηθεί.
-          Μπορείτε να επιστρέψετε στην αρχική σελίδα ή να επικοινωνήσετε μαζί μας.
-        </p>
-
-        <div style="margin-top: 30px;">
-          <a href="index.html" class="btn">Επιστροφή στην Αρχική</a>
-          <a href="contact.html" class="btn" style="margin-left: 15px;">
-            Επικοινωνία
-          </a>
+          <div style="margin-top: 30px">
+            <a href="index.html" class="btn">Επιστροφή στην Αρχική</a>
+            <a href="contact.html" class="btn" style="margin-left: 15px">
+              Επικοινωνία
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <!-- FOOTER -->
     <footer>
       <div class="footer-wrapper container">
-        
         <div class="sponsor sponsor-left">
-          <img src="assets/icons/espa.png" alt="ΕΣΠΑ (Εταιρικό Σύμφωνο για το Πλαίσιο Ανάπτυξης)">
+          <img
+            src="assets/icons/espa-.webp"
+            srcset="
+              assets/icons/espa-171.webp 171w,
+              assets/icons/espa-342.webp 342w
+            "
+            sizes="171px"
+            alt="ΕΣΠΑ (Εταιρικό Σύμφωνο για το Πλαίσιο Ανάπτυξης)"
+            width="342"
+            height="171"
+            loading="lazy"
+          />
         </div>
-        
+
         <div class="footer-content">
           <p>AL&MA DECO – Καβαλάρη Μαρία, Ατομική Επιχείρηση</p>
           <p>ΑΦΜ: 124777091 | ΔΟΥ: ΚΕΦΟΔΕ Αττικής</p>
@@ -103,14 +111,24 @@
           <p><a href="privacy.html">Πολιτικές Απορρήτου</a></p>
           <p>© 2026 AL&MA DECO</p>
         </div>
-        
-        <div class="sponsor sponsor-right">
-          <img src="assets/icons/dypa.png" alt="Δ.ΥΠ.Α. (Δημόσια Υπηρεσία Απασχόλησης)">
-        </div>
 
+        <div class="sponsor sponsor-right">
+          <img
+            src="assets/icons/dypa-105.webp"
+            srcset="
+      assets/icons/dypa-105.webp 105w,
+      assets/icons/dypa-210.webp 210w
+    "
+            sizes="105px"
+            alt="Δ.ΥΠ.Α. (Δημόσια Υπηρεσία Απασχόλησης)"
+            width="210"
+            height="105"
+            loading="lazy"
+          />
+        </div>
       </div>
     </footer>
 
-    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/navbar.js" defer></script>
   </body>
 </html>

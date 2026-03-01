@@ -8,6 +8,18 @@
     --dark-text: #333333;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-greek-400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-600.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
 /* =============================
    GLOBAL RESET
 ============================= */
@@ -96,7 +108,7 @@ nav a:hover {
 
 .hero h1 {
     font-size: 120px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 4px;
 }
 
